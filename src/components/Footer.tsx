@@ -49,8 +49,8 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="circleposition bg-[#902db4] rounded-[100%] absolute  left-[50%] translate-x-[-80%]  translate-y-[-50%] blur-[130px] h-[50px] md:h-[180px] w-[800px]"></div>
-                <div className="circleposition bg-[#ee8340] rounded-[100%] absolute  left-[60%] translate-x-[-40%]  translate-y-[-50%] blur-[130px]  h-[50px]  md:h-[120px] w-[500px]"></div>
+                <div className="circleposition bg-[#902db4] rounded-[100%] absolute  left-[50%] translate-x-[-80%]  translate-y-[-50%] blur-[130px] h-[50px] md:h-[180px] w-[200px] md:w-[800px]"></div>
+                <div className="circleposition bg-[#ee8340] rounded-[100%] absolute  left-[60%] translate-x-[-40%]  translate-y-[-50%] blur-[130px]  h-[50px]  md:h-[120px]  w-[200px] md:w-[500px]"></div>
                 <div className="mt-4 flex flex-wrap justify-between items-center  pt-4">
                     <p className="text-sm text-center md:text-left">&copy; Copyright 2024 aman kohare. All rights reserved.</p>
                 </div>

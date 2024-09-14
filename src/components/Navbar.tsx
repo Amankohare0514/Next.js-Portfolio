@@ -10,7 +10,6 @@ const Navbar = () => {
     const router = useRouter();
     const [mounted, setMounted] = useState(false);
     const Links = [
-        { name: "Home", link: "/" },
         { name: "About", link: "/about" },
         { name: "Project", link: "/project" },
         { name: "Experience", link: "/experience" },
