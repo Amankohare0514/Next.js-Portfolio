@@ -2,15 +2,16 @@
 import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-const ProjectCard = ({ title, description, githubLink , liveLink }: any) => {
+
+const ProjectCard = ({ title, description, githubLink, liveLink }: any) => {
   return (
-    <div className="flex flex-col mt-3 justify-between p-4 bg-transparent border shadow-md rounded-lg md:h-[100px] h-[140px] max-w-7xl">
+    <div className="flex flex-col dark:bg-neutral-950 hover:dark:bg-neutral-900 bg-white hover:bg-gray-50 mt-3 justify-between py-8 px-4 bg-transparent border shadow-md rounded-lg h-auto md:h-[140px] max-w-6xl">
       <div className="flex justify-between">
         <div>
           <h3 className="text-xl font-semibold mb-2">{title}</h3>
           <p className="mb-4">{description}</p>
         </div>
-        <div className='flex items-center'>
+        <div className='hidden md:flex items-center'>
           <a
             href={githubLink}
             target="_blank"
@@ -25,7 +26,7 @@ const ProjectCard = ({ title, description, githubLink , liveLink }: any) => {
             rel="noopener noreferrer"
             className='ml-2 hover:text-red-600'
           >
-            < OpenInNewIcon />
+            <OpenInNewIcon />
           </a>
         </div>
       </div>

@@ -12,10 +12,22 @@ const Project = () => {
 
   return (
     <>
-       {/* pinned */}
-      <section className="container font-sans mx-auto px-4 py-8 max-w-7xl" >
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-center items-center mb-4">
+      {/* pinned */}
+      <section className="container font-sans mx-auto py-4 md:py-12 px-8 sm:px-10 lg:px-8" >
+        <div className="max-w-6xl mx-auto">
+          <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
+            <div className="absolute text-2xl font-bold md:text-5xl left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
+              <span className="">Projects</span>
+            </div>
+            <div className="relative text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">
+              <span className="">Projects</span>
+            </div>
+          </div>
+          <h1 className="text-lg mb-8 font-sans text-gray-700 dark:text-white">
+            The list of my all projects.
+          </h1>
+          <hr />
+          <div className="flex justify-center items-center mt-6 mb-4">
             <input
               type="text"
               placeholder="Search projects name"
@@ -28,20 +40,6 @@ const Project = () => {
             {filteredProjects.map(project => (
               <ProjectCard key={project.id} {...project} />
             ))}
-          </div>
-        </div>
-        <div className="flex justify-center mt-8 items-center">
-          <div className="w-full  max-w-7xl  rounded-lg bg-slate-50  dark:bg-gray-900 text-white  p-4 shadow-md mx-4 md:mx-0">
-            <div className="flex items-center space-x-2">
-              <PushPinIcon className="text-gray-800 dark:text-gray-700" />
-              <span className="font-semibold text-gray-700 dark:text-gray-500">Pinned</span>
-            </div>
-            <p className="mt-2 text-gray-800 dark:text-gray-400">
-              Hey there! Hey there! You can check out more projects developed by me by visiting my GitHub profile. Thanks and here is  {" "}
-              <a target='_blank' className="text-sky-500 hover:underline" href="https://github.com/amankohare0514">
-                github
-              </a>
-            </p>
           </div>
         </div>
       </section>

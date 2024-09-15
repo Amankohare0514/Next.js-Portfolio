@@ -1,11 +1,23 @@
 import Image from 'next/image';
-import { Github, Instagram , Linkedin, Mail, Briefcase, MapPin, Calendar } from 'lucide-react';
+import { Github, Instagram, Linkedin, Mail, Briefcase, MapPin, Calendar } from 'lucide-react';
 
 function About() {
   return (
-    <div className="min-h-screen bg-white dark:bg-black py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="bg-white dark:bg-black shadow-xl rounded-xl dark:shadow-gray-800 overflow-hidden">
+    <div className="min-h-screen bg-white dark:bg-black py-4 md:py-12 px-8 sm:px-10 lg:px-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
+          <div className="absolute text-2xl font-bold md:text-5xl left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
+            <span className="">About Me</span>
+          </div>
+          <div className="relative text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">
+            <span className="">About Me</span>
+          </div>
+        </div>
+        <h1 className="text-lg mb-8 font-sans  text-gray-700 dark:text-white">
+        Hi there! I am Aman.
+        </h1>
+        <hr />
+        <div className="bg-white dark:bg-black mt-6  overflow-hidden">
           <div className="flex flex-col item-center">
             {/* Image Section */}
             <div className="relative w-full md:w-auto flex justify-center">
@@ -20,14 +32,11 @@ function About() {
             </div>
 
             {/* Content Section */}
-            <div className="p-8 md:p-12 w-full text-start">
-              <h1 className="mt-2 text-4xl sm:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-400 to-pink-200   animate-gradient-x">
-                Aman Kohare
-              </h1>
+            <div className="w-full text-start mt-6">
               <p className="mt-2 text-xl text-gray-600 dark:text-gray-200 font-medium">
                 Frontend Developer & Designer
               </p>
-              <div className="mt-4 flex flex-wrap  gap-4 text-sm text-gray-400 dark:text-gray-200">
+              <div className="flex flex-wrap  gap-4 text-sm text-gray-400 dark:text-gray-200">
                 <div className="flex items-start ">
                   <Briefcase className="h-5 w-5 mr-2 text-indigo-500" />
                   1+ Years Experience

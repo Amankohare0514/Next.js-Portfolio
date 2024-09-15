@@ -21,7 +21,7 @@ const SkillSection = () => {
 
   return (
     <div className="transition-colors duration-300 bg-white dark:bg-black text-gray-900 dark:text-white">
-      <div className="container md:max-w-7xl mx-auto px-4 py-16">
+      <div className="container md:max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white">
           My Skills
         </h2>
@@ -29,14 +29,14 @@ const SkillSection = () => {
           {skills.map((skill, index) => (
             <div
               key={skill.name}
-              className="flex flex-col items-center p-4 rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 bg-white dark:bg-black border shadow-xl shadow-sky-300 dark:shadow-gray-900 hover:bg-gray-50 dark:hover:bg-gray-900  dark:shadow-md"
+              className="flex flex-col items-center md:p-4 p-2 rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 bg-white dark:bg-black border   "
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <skill.icon
-                className="w-14 h-14 mb-4 text-blue-500 dark:text-cyan-400"
+                className="md:w-14 md:h-14 w-10 h-10 md:mb-4 mb-2 text-blue-500 dark:text-white"
                 aria-hidden="true"
               />
-              <span className="text-lg font-semibold text-gray-700 dark:text-cyan-200">
+              <span className=" md:text-lg text-xs font-semibold text-gray-700 dark:text-white">
                 {skill.name}
               </span>
             </div>
