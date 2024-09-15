@@ -3,13 +3,13 @@ import EmailIcon from '@mui/icons-material/Email';
 import LocalPhone from '@mui/icons-material/LocalPhone';
 const Footer = () => {
     return (
-        <footer className="bg-white dark:bg-black text-gray-700 dark:text-gray-300 py-8">
+        <footer className="bg-white dark:bg-black text-gray-700 dark:text-gray-300  py-8">
             <div className="container mx-auto px-4 max-w-6xl">
                 <div className="flex flex-wrap justify-between">
                     <div className="flex flex-wrap w-full md:w-1/2 mb-6 md:mb-0">
                         <div className="md:w-1/2 w-1/2 mb-4">
                             <h4 className="text-xl mb-3 font-bold">Pages</h4>
-                            <ul className="text-lg">
+                            <ul className="md:text-lg text-sm">
                                 <li className='mb-1'><a href="/" > Home</a></li>
                                 <li className='mb-1'><a href="/about "> About us</a></li>
                                 <li className='mb-1'><a href="/project"> Projects</a></li>
@@ -18,7 +18,7 @@ const Footer = () => {
                         </div>
                         <div className="w-1/2 md:w-1/2 mb-4">
                             <h4 className="text-xl mb-3 font-bold">Developers</h4>
-                            <ul className="text-lg">
+                            <ul className="md:text-lg text-sm">
                                 <li className='mb-1'><a href="/experience"> Experience</a></li>
                                 <li className='mb-1'><a href="/blogs"> Blogs</a></li>
                                 <li><a href="https://nextjs.org/docs"> Documentation</a></li>
@@ -30,8 +30,8 @@ const Footer = () => {
 
                     <div className="w-1/2 md:w-1/4 mb-6 md:mb-0">
                         <h4 className="text-xl mb-3 font-bold">Social</h4>
-                        <ul className="text-lg">
-                            <li><a href="/faq">Instagram</a></li>
+                        <ul className="md:text-lg text-sm ">
+                            <li><a href="/faq" >Instagram</a></li>
                             <li><a href="/terms">Facebook</a></li>
                             <li><a href="/privacy">linkedin</a></li>
                             <li><a href="/careers">Github</a></li>
@@ -40,11 +40,11 @@ const Footer = () => {
 
                     <div className="w-1/2 md:w-1/4">
                         <h4 className="text-xl mb-3 font-bold">Contact </h4>
-                        <p className="md:text-lg text-sm">
-                            <LocalPhone /> +91 80856 40735<br />
+                        <p className="md:text-lg text-xs">
+                            <LocalPhone className='md:text-lg text-sm ' /> +91 80856 40735<br />
                         </p>
-                        <p className="md:text-lg text-sm">
-                            <EmailIcon /> amankohare@gmail.com<br />
+                        <p className="md:text-lg text-xs">
+                            <EmailIcon  className='md:text-lg text-sm'/> amankohare@gmail.com<br />
                         </p>
                     </div>
                 </div>
