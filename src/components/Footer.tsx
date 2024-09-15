@@ -31,10 +31,10 @@ const Footer = () => {
                     <div className="w-1/2 md:w-1/4 mb-6 md:mb-0">
                         <h4 className="text-xl mb-3 font-bold">Social</h4>
                         <ul className="md:text-lg text-sm ">
-                            <li><a href="/faq" >Instagram</a></li>
-                            <li><a href="/terms">Facebook</a></li>
-                            <li><a href="/privacy">linkedin</a></li>
-                            <li><a href="/careers">Github</a></li>
+                            <li><a href="https://www.instagram.com/aman__0514/" >Instagram</a></li>
+                            <li><a href="https://www.facebook.com/aman.kohare.7">Facebook</a></li>
+                            <li><a href="https://www.linkedin.com/in/aman-kohare-3a0678235/">linkedin</a></li>
+                            <li><a href="https://github.com/Amankohare0514">Github</a></li>
                         </ul>
                     </div>
 
